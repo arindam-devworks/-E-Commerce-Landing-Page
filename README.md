@@ -48,32 +48,31 @@ Open your browser
 Navigate to http://localhost:5173
 
 🏗️ Project Structure
-text
 src/
 ├── components/
-│ ├── Header/
-│ │ ├── Header.jsx
-│ │ ├── Header.css
-│ │ ├── SearchBar.jsx
-│ │ └── ThemeToggle.jsx
-│ ├── Hero/
-│ │ ├── Hero.jsx
-│ │ └── Hero.css
-│ ├── Products/
-│ │ ├── ProductGrid.jsx
-│ │ ├── ProductCard.jsx
-│ │ ├── CategoryFilter.jsx
-│ │ └── ProductGrid.css
-│ ├── Contact/
-│ │ ├── ContactForm.jsx
-│ │ └── ContactForm.css
-│ └── Footer/
-│ ├── Footer.jsx
-│ └── Footer.css
+│   ├── Header/
+│   │   ├── Header.jsx
+│   │   ├── Header.css
+│   │   ├── SearchBar.jsx
+│   │   └── ThemeToggle.jsx
+│   ├── Hero/
+│   │   ├── Hero.jsx
+│   │   └── Hero.css
+│   ├── Products/
+│   │   ├── ProductGrid.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── CategoryFilter.jsx
+│   │   └── ProductGrid.css
+│   ├── Contact/
+│   │   ├── ContactForm.jsx
+│   │   └── ContactForm.css
+│   └── Footer/
+│       ├── Footer.jsx
+│       └── Footer.css
 ├── contexts/
-│ └── ThemeContext.jsx
+│   └── ThemeContext.jsx
 ├── services/
-│ └── api.js
+│   └── api.js
 ├── App.jsx
 ├── App.css
 ├── main.jsx
@@ -81,9 +80,7 @@ src/
 
 🔌 API Integration
 This project uses the following APIs:
-
 Products API: https://api.escuelajs.co/api/v1/products
-
 Categories API: https://api.escuelajs.co/api/v1/categories
 
 📝 Scripts
