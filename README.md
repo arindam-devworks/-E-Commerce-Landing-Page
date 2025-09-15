@@ -1,12 +1,96 @@
-# React + Vite
+🌟 Features
+Responsive Design: Fully responsive layout that works on desktop, tablet, and mobile devices
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product Listing: Display products from external API with images, titles, and prices
 
-Currently, two official plugins are available:
+Category Filtering: Filter products by categories fetched from API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Search Functionality: Real-time search that filters products by title and description
 
-## Expanding the ESLint configuration
+Dark Mode Toggle: Switch between light and dark themes with persistent preferences
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Contact Form: Fully validated contact form with name, email, and message fields
+
+Hover Effects: Interactive product cards with "Add to Cart" overlay animations
+
+Modern UI: Clean, professional design with smooth transitions and animations
+
+🛠️ Technologies Used
+Frontend Framework: React
+
+Build Tool: Vite
+
+Styling: CSS3 with Flexbox and Grid
+
+API Integration: Fetch API for external data
+
+State Management: React Hooks (useState, useEffect, useContext)
+
+Icons: Emoji-based icons for theme toggle
+
+Local Storage: For persisting user theme preferences
+
+📦 Installation
+Clone the repository
+
+bash
+git clone https://github.com/your-username/e-commerce-landing-page.git
+cd e-commerce-landing-page
+Install dependencies
+
+bash
+npm install
+Start the development server
+
+bash
+npm run dev
+Open your browser
+Navigate to http://localhost:5173
+
+🏗️ Project Structure
+text
+src/
+├── components/
+│ ├── Header/
+│ │ ├── Header.jsx
+│ │ ├── Header.css
+│ │ ├── SearchBar.jsx
+│ │ └── ThemeToggle.jsx
+│ ├── Hero/
+│ │ ├── Hero.jsx
+│ │ └── Hero.css
+│ ├── Products/
+│ │ ├── ProductGrid.jsx
+│ │ ├── ProductCard.jsx
+│ │ ├── CategoryFilter.jsx
+│ │ └── ProductGrid.css
+│ ├── Contact/
+│ │ ├── ContactForm.jsx
+│ │ └── ContactForm.css
+│ └── Footer/
+│ ├── Footer.jsx
+│ └── Footer.css
+├── contexts/
+│ └── ThemeContext.jsx
+├── services/
+│ └── api.js
+├── App.jsx
+├── App.css
+├── main.jsx
+└── index.css
+
+🔌 API Integration
+This project uses the following APIs:
+
+Products API: https://api.escuelajs.co/api/v1/products
+
+Categories API: https://api.escuelajs.co/api/v1/categories
+
+📝 Scripts
+npm run dev - Start development server
+
+npm run build - Build for production
+
+npm run preview - Preview production build
+
+Note: This project was developed as part of a hiring process to demonstrate React skills, API integration, and responsive design capabilities.
