@@ -60,4 +60,3 @@ npm run build - Build for production
 
 npm run preview - Preview production build
 
-Note: This project was developed as part of a hiring process to demonstrate React skills, API integration, and responsive design capabilities.
