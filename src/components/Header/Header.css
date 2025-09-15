@@ -1,0 +1,173 @@
+/* src/components/Header/Header.css */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  color: #3498db;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  color: #3498db;
+}
+
+.search-bar {
+  margin: 0 1.5rem;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-bar input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.theme-toggle:hover {
+  background-color: #e9ecef;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Dark mode styles for header */
+.dark-mode .header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode .nav a {
+  color: #f0f0f0;
+}
+
+.dark-mode .nav a:hover {
+  color: #3498db;
+}
+
+.dark-mode .theme-toggle {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: #444;
+}
+
+.dark-mode .search-bar input {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+/* Responsive design for header */
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+  
+  .nav {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+  
+  .nav-open {
+    display: block;
+  }
+  
+  .nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+  
+  .search-bar {
+    order: 2;
+    margin: 0;
+    flex-grow: 1;
+    max-width: none;
+    margin-left: 1rem;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .header-controls {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    display: none;
+  }
+  
+  .header-controls.active {
+    display: flex;
+  }
+}

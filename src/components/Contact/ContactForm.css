@@ -1,0 +1,95 @@
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.submit-btn {
+  padding: 0.8rem 2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+/* Add to src/components/Contact/ContactForm.css */
+.dark-mode .form-group label {
+  color: var(--text-primary);
+}
+
+.dark-mode .submit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.dark-mode .submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.dark-mode .success-message {
+  background-color: #155724;
+  color: #d4edda;
+}
+
