@@ -47,36 +47,6 @@ npm run dev
 Open your browser
 Navigate to http://localhost:5173
 
-🏗️ Project Structure
-src/
-├── components/
-│   ├── Header/
-│   │   ├── Header.jsx
-│   │   ├── Header.css
-│   │   ├── SearchBar.jsx
-│   │   └── ThemeToggle.jsx
-│   ├── Hero/
-│   │   ├── Hero.jsx
-│   │   └── Hero.css
-│   ├── Products/
-│   │   ├── ProductGrid.jsx
-│   │   ├── ProductCard.jsx
-│   │   ├── CategoryFilter.jsx
-│   │   └── ProductGrid.css
-│   ├── Contact/
-│   │   ├── ContactForm.jsx
-│   │   └── ContactForm.css
-│   └── Footer/
-│       ├── Footer.jsx
-│       └── Footer.css
-├── contexts/
-│   └── ThemeContext.jsx
-├── services/
-│   └── api.js
-├── App.jsx
-├── App.css
-├── main.jsx
-└── index.css
 
 🔌 API Integration
 This project uses the following APIs:
