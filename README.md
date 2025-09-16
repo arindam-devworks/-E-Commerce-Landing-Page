@@ -30,31 +30,21 @@ Icons: Emoji-based icons for theme toggle
 
 Local Storage: For persisting user theme preferences
 
-📦 Installation
-Clone the repository
-
-bash
-git clone https://github.com/your-username/e-commerce-landing-page.git
-cd e-commerce-landing-page
-Install dependencies
-
-bash
-npm install
-Start the development server
-
-bash
-npm run dev
-Open your browser
-Navigate to http://localhost:5173
-
 
 🔌 API Integration
+
 This project uses the following APIs:
 Products API: https://api.escuelajs.co/api/v1/products
 Categories API: https://api.escuelajs.co/api/v1/categories
 
-📝 Scripts
-npm run dev - Start development server
+# Install dependencies
+
+npm install
+
+# Start the development server
+
+npm run dev  - Open your browser
+Navigate to http://localhost:5173
 
 npm run build - Build for production
 
